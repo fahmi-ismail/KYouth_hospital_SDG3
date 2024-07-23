@@ -58,7 +58,8 @@ Development of a responsive and data-driven dashboard which highlights potential
 
    - Age: Noted a higher number of patients are in the 76-95 age brackets. 372 patients in total or 38% of the total patient population. Considering that elderlies are a high risk category, I then decided to explore this group further to identify possible vulnerable groups.
 
-    ![image](https://github.com/user-attachments/assets/e1c5fd12-c1b0-44cc-a85c-cfcdc2f92887)
+     ![image](https://github.com/user-attachments/assets/edf2e783-b412-4ca2-a640-6df882f74321)
+
 
 #### 2. A possible restriction to healthcare access would be financial constraints. Following this thought process, I looked into the costs for procedures (encounters) throughout the years.
 
@@ -70,66 +71,37 @@ Development of a responsive and data-driven dashboard which highlights potential
   ![image](https://github.com/user-attachments/assets/7658a284-9733-4062-b3a8-ad3e70046c88)
 
    - While an increase of 1.14% is not substantial when compared to an inflation rate of 3%, what should be highlighted is the initial high cost of procedures that will continue to increase. In other words, considering that the elder population would most likely be retired without a steady stream of income, the need to pay for the costs of healthcare will place a huge burden on this group. This will be especially true if they are uninsured.
+     
+   - Surprisingly despite the high costs for treatment, only 68% of the total patients in MGH are insured leaving 8,807 of the patients having to pay out of pocket for each procedure required.
 
-   - The median annual income in 2021 in the US is $45,760, or $3,813 per month.
+     ![image](https://github.com/user-attachments/assets/fce5e21c-c142-4579-a7bb-ec055938820a)
+   - When looking at the top 5 average encounter costs, we can see that the highest average cost for the top encounter would leave you with a $22,573 bill. We will take this as a more aggresive approach to how well the average American would be able to pay for their own healthcare costs.
 
+     ![image](https://github.com/user-attachments/assets/f48e6d0e-dd82-4f78-9ea9-bb0721f943d2)
+   - The real median household annual income for in the US is $74,580, which when used as coverage basis for the largest average cost would result in 3.30x
 
-## Overview of the Dashboard:
-This dashboard consists of 3 parameters and 4 main analysis sections:
-### Parameters:
-1. Date: The analysis displayed on the dashboard corresponds to the chosen date.
-2. Date Type: The dashboard analysis is determined by the selected date type, including daily, weekly, monthly, and yearly.
-3. No. of Periods: This parameter controls the display of past periods for trend chart analysis.
+     ![image](https://github.com/user-attachments/assets/96922702-bb4f-4486-916d-787cb732527e)
+     ![image](https://github.com/user-attachments/assets/3f05ec80-493e-454f-bc1b-5370a8f69ae7)
 
-### Analysis Sections:
-1. Key Performance Indicators
-2. Charts
-3. Map
-4. Trend Charts
+     Data Source: [United States Census Bureau](https://www.census.gov/library/publications/2023/demo/p60-279.html#:~:text=Real%20median%20household%20income%20was,and%20Table%20A%2D1)
+   - This would be even further exacerbated when considering a monthly salary of $6,215 resulting in coverage ratio of 0.28x
 
-![image](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/34ab63ef-961f-4712-b8eb-12c4f0d1e8d3)
+     ![image](https://github.com/user-attachments/assets/2bec6c1e-a630-4d9c-b9fa-1355a2741b40)
 
-### Dashboard Functionality:
-1. Analysis can be interactively filtered by clicking on any item within the chart.
-![Screenshot 2024-05-29 at 10 05 10 PM](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/e5aab19f-7fab-41f5-b337-a8ed07bbc908)
+#### 3. Quantifying the financial impact to the vulnerable group identified
 
-2. Business users can tailor the number of past periods for trend chart analysis according to their needs.
-![Screenshot 2024-05-29 at 10 06 36 PM](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/908311f1-65f5-4aac-b61e-2a21a4b5c355)
+   - Previously, I wanted to get a grasp of the costs in general taking account of all the patients in MGH. Since this project is to identify the actual vulnerable group, I will narrow down the population size to the most affected individuals.
+   - When looking at the insurance coverage for the elder patients (above 50 years old), it is fortunate to see that a large propoertion of them are actually insured (87%). The remaining 13% or 81 patients will need to be monitored for any difficulties in obtaining healthcare.
 
-3. Various trend charts analyzing different Key Performance Indicators can be accessed by selecting from the dropdown menu.
-![Screenshot 2024-05-29 at 10 07 32 PM](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/2ea29f34-1228-4149-814e-b27bd50926d7)
+     ![image](https://github.com/user-attachments/assets/fff51854-7081-407d-bc43-8376cbab6015)
+   - For the elderly patients, the top 5 average costs per procedure are as follows:
 
-4. Month-on-Month Growth for Key Performance Indicators is displayed in a single view on the dashboard when selecting Date Type as "Monthly". This functionality extends to Day-on-Day, Week-on-Week, and Year-on-Year Growth as well.
-![Screenshot 2024-05-29 at 10 08 41 PM](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/1ce4e04a-5afa-4461-b286-4cf66589e12d)
+     ![image](https://github.com/user-attachments/assets/07315890-c475-494d-8f37-ce595b56dbb9)
+   - To quantify the total impact of the costs for all 81 patients, I have compiled a brief table below on an aggresive basis to understand the real monetary value of financial assistance required. If full financial assistance is required, the total financial impact for all 81 patients would amount to $8.08 million or roughly $100k per patient.
 
-## BI Monthly Reporting for January 2023:
-![image](https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/63def021-41fb-4b26-a06b-27da0e0e2016)
+     ![image](https://github.com/user-attachments/assets/bbe83bca-016e-498b-968a-afa804e91363)
 
-1. January 2023 witnessed consistent **sales volumes** compared to historical data across all Key Performance Indicators, resulting in a total of **12k sales**, contributing to **TL 2.6 million**.
-2. The **average sales amount per customer** in January 2023 was TL 667, with a total **customer count** of **3.9k**.
-3. **Female** customers dominate the customer base, making up **60%**. The age distribution is relatively balanced, with adults **aged 25 to 64** comprising the **majority**, while customers **over 65** represent **only 9%** of the total.
-4. The **top three categories by sales count** are **Clothing (34%)**, **Cosmetics (17%)**, and **Food & Beverage (15%)**. However, the **top three categories by sales amount** are **Clothing (45%)**, **Shoes (26%)**, and **Technology (23%)**.
-5. **Shoes** and **Technology** achieve higher sales amounts despite not being in the top three for sales count, due to their **high average sales amounts per item (TL 1,050 for Technology and TL 600 for Shoes)**.
-6. The **top three shopping malls** generating the **most sales revenue** in Isbantul are **Kanyon (TL 538k)**, **Mall of Isbantul (TL 528k)** and **Metrocity (TL 424k)**.
-
-## Key Dashboard Business Insights for January 2023:
-1. The number of customers **aged 55 to 64** purchasing **Cosmetic products** has gradually increased from **99 to 133 (34%)** over the past 7 months, resulting in a **50% increase in both sales count and sales amount (TL)**.
-<p float="center">
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/b0563fe5-8b3f-410a-a815-c534a5e5a3c8" width="45%" />
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/3ade4b63-fcc0-4dfd-9ad0-2d92f0bcafa9" width="45%" /> 
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/6973b600-f550-4e63-a108-2d5af1279abf" width="45%" />
-</p>
-
-**Recommended Business Decision**: The marketing team should conduct targeted personalized campaigns for customers aged 55 to 64, specifically focusing on Cosmetic products. Before launching the campaigns, A/B testing should be conducted to evaluate their effectiveness in boosting Sales Revenue (TL).
-
-2. There has been a **sudden drop** in the number of **young adult customers aged 25 to 34** purchasing **Technology products** in January 2023 compared to the past 7 months, **decreasing from 39 to 26 (33%)**. Consequently, there was a corresponding **24% decrease** in **both sales count and sales amount (TL)** in January 2023.
-<p float="center">
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/3dae8337-fd3c-4db7-b8ff-a9236ffe7f6a" width="45%" />
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/493632ef-c9d7-4979-b0aa-daf8f0a115bc" width="45%" /> 
-  <img src="https://github.com/rnlow22/shopping_mall_sales_dashboard/assets/30455582/863a8c32-cdb7-4f6d-bb96-a5697158a2ba" width="45%" />
-</p>
-
-**Recommended Business Decision**: The product team should conduct an investigation into the root cause of the sudden drop in Technology product sales among young adult customers aged 25 to 34. Possible causes to investigate include:
-  1. Insufficient stocks in the shopping mall
-  2. Launch in virtual technology stores
-  3. Other potential factors
+**Recommended Action Points**: Possible action points for MGH and healthcare in the US in general:
+  1. Co-pay arrangements for identified vulnerable groups
+  2. MGH and insurance companies to work together and assume a fiduciary duty to minimise the costs of healthcare
+  3. MGH and other healthcare providers to lobby for national policies to subsidise healthcare costs for vulnerable groups.
